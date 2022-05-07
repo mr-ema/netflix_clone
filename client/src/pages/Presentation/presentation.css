@@ -1,0 +1,616 @@
+.presentation-container {
+  grid-column: 1/13;
+}
+
+.presentation-container section {
+  background-color: #000;
+  border-bottom: 8px solid #222;
+  color: var( --primary-text-color);
+  text-align: center;
+}
+
+/* ########### BUTTONS HEADER #############*/
+.presentation-buttons {
+  grid-column: 3;
+  display: flex;
+  
+  height: fit-content;
+}
+
+.presentation-container select {
+  appearance: none;
+}
+
+.presentation-container select {
+  display: block;
+  background-color: var(--primary-bg);
+  box-sizing: border-box;
+  color: var(--primary-text-color);
+  margin-right: 1rem;
+  padding: 0.6rem;
+  text-transform: capitalize;
+
+  width: 100%;
+}
+
+.select-wrapper {
+  display: inline-block;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "▼";
+  font-size: 0.7rem;
+
+  top: 35%;
+  right: 10%;
+  position: absolute;
+}
+
+.presentation-container button, .presentation-container a {
+  background-color: var(--button-red-color);
+  border: none;
+  border-radius: 0.3rem;
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  padding: 0.6rem;
+  text-decoration: none;
+}
+/* FIRST SECTION CONTENT */
+.no-sign-main {
+  justify-self: center;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 950px;
+}
+
+.presentation-container h1 {
+  font-size: 4rem;
+  font-weight: 600;
+
+  margin-bottom: 1rem;
+  max-width: 800px;
+}
+
+.presentation-container h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.presentation-container h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+/* ##################### EMAIL-FORM ################## */
+.email {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 1fr 0.5fr;
+  gap: 0;
+  padding: 1rem;
+
+  max-width: 950px;
+}
+
+.alias-mz {
+  grid-column: 2;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1r);
+  position: relative;
+
+  width: 100%;
+}
+
+.presentation-container input {
+  grid-row: 1;
+  padding: 0.3rem 0.6rem;
+  height: 70px;
+
+  box-sizing: border-box;
+
+  width: 100%;
+}
+
+.presentation-container input::placeholder {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.alias-mz span {
+  grid-row: 2;
+  position: absolute;
+  left: 0;
+  color: #ffa00a;
+
+  margin: 0.6rem;
+}
+
+.email button {
+  grid-column: 3;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  font-size: 1.875rem;
+  padding: 0.6rem 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  height: auto;
+}
+
+.email button span svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* #################  Section 2-3-4  ##################*/
+.cards {
+  display: flex;
+  padding: 3rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-container .container {
+  max-width: 500px;
+
+  margin-right: 3rem;
+}
+
+.presentation-container .container h1{
+  font-size: 3.125rem;
+
+  width: 100%;
+}
+
+.our-story-card-animation-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  max-width: 550px;
+}
+
+.our-story-card-animation, .our-story-card-img, .our-story-card-video {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.our-story-card-animation {
+  display: grid;
+  justify-content: center;
+
+  position: relative;
+}
+
+.our-story-card-video {
+  margin-top: 20%;
+}
+
+.our-story-card-img {
+  z-index: 1;
+  max-height: 100%;
+  max-width: 100%;
+}
+/* ################# SECOND SECTION (2) ##################3 */
+.show {
+  z-index: 1;
+  padding: .5em .75em;
+  position: relative;
+}
+
+.show {
+  grid-row: 1;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  background-color: #000000f0;
+  border: 1px solid #666;
+  border-radius: 0.6rem;
+  
+  margin-top: 50%;
+  justify-self: center;
+  padding: 0.6rem 1rem;
+
+  max-width: 60%;
+  height: fit-content;
+}
+
+.our-story-card-animation-text {
+  padding: 1rem 0rem;
+}
+
+.text-0 {
+  font-size: 1rem;
+  font-weight: bold;
+
+  width: 200px;
+}
+
+.text-1 {
+  font-size: 0.9rem;
+  margin: 0.3rem;
+  color: rgb(89, 0, 255);
+}
+
+.show::after {
+	width: 3em;
+	height: 3em;
+	outline: 2px solid #000;
+	outline-offset: -2px;
+	display: block;
+	background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') center center no-repeat;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+	content: '';
+	-webkit-box-flex: 0;
+	-webkit-flex-grow: 0;
+	-moz-box-flex: 0;
+	-ms-flex-positive: 0;
+	flex-grow: 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+
+  align-self: center;
+}
+
+.show::after {
+	height: 3.75em;
+}
+/* ################# FRECUEND ASKED QUESTION (FAQ) SECTION */
+.faq h1 {
+  min-width: 100%;
+  text-align: center;
+
+  margin: 4rem 0;
+}
+
+.faq {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.faq  ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+
+  width: 75%;
+}
+
+.faq li {
+  max-width: 815px;
+}
+
+.faq > ul > li > button {
+  background-color: #303030;
+  border: 0;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-bottom: 0.2rem;
+  padding: .8em 2.2em .8em 1.2em;
+  position: relative;
+  text-align: start;
+
+  width: 100%;
+}
+
+.faq .svg-icon {
+  fill: #fff;
+  position: absolute;
+  right: 3%;
+  top: 35%;
+
+  width: 30px;
+  height: 30px;
+}
+
+.svg-closed {
+  transform: rotate(45deg);
+  transition: transform 100ms linear;
+}
+
+.svg-open {
+  transform: rotate(0deg);
+  transition: transform 100ms linear;
+}
+
+.faq-answer {
+  background-color: #303030;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.closed {
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: height 100ms linear;
+}
+
+.open {
+  max-height: 1200px;
+  overflow: hidden;
+
+  transition: height 100ms linear;
+}
+
+.faq-answer span {
+  display: inline-block;
+  font-size: 1.625rem;
+  padding: 2rem;
+  text-align: left;
+}
+
+.faq > div {
+  margin: 4rem;
+}
+
+.faq > div > p {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+
+
+
+/* ##################### MEDIA SECTION ##################### */
+
+@media (min-width: 700px) and (max-width: 1100px){
+  .presentation-container h1, .container h1 {
+    font-size: 2.5rem;
+  }
+  .presentation-container h2, .container h2 {
+    font-size: 1.2rem;
+  }
+  .presentation-container h3 {
+    font-size: 1rem;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+  }
+
+  .alias-mz {
+    width: 75%;
+  }
+
+  .alias-mz span {
+    grid-row: 1;
+    position: relative;
+    text-align: start;
+  }
+
+  .presentation-container input {
+    grid-row: 2;
+    height: 45px;
+    margin-bottom: 1rem;
+
+  }
+  .email button{
+    height: 40px;
+    width: 120px;
+    font-size: 1rem;
+    gap: 0.2rem;
+  }
+
+  .email button span svg {
+    width: 10px;
+    height: 13px;
+  }
+
+  #logo {
+    width: 6.75rem;
+    height: 2rem;
+  }
+
+  section.cards {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  
+    align-items: center;
+  }
+
+  .presentation-container .container h2 {
+    margin-bottom: 0;
+  }
+
+  .presentation-container .container {
+    grid-row: 1;
+    margin: 0;
+    z-index: 2;
+  }
+
+  .our-story-card-animation-container {
+    margin-top: -1rem;
+  }
+  
+  .faq > ul > li > button {
+    font-size: 1.6rem;
+  }
+
+  .faq-answer span {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .presentation-container h1, .presentation-container .container h1 {
+    font-size: 1.7rem;
+  }
+  .presentation-container h2, .presentation-container .container h2 {
+    font-size: 1rem;
+  }
+  .presentation-container h3 {
+    font-size: 0.8rem;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+  }
+
+  .alias-mz {
+    width: 75%;
+  }
+
+  .alias-mz span {
+    grid-row: 1;
+    position: relative;
+    text-align: start;
+  }
+
+  .presentation-container input {
+    grid-row: 2;
+    height: 45px;
+    margin-bottom: 1rem;
+
+  }
+  .email button{
+    height: 40px;
+    width: 120px;
+    font-size: 1rem;
+    gap: 0.2rem;
+  }
+
+  .email button span svg {
+    width: 10px;
+    height: 13px;
+  }
+
+  #logo {
+    width: 5rem;
+    height: 2rem;
+  }
+
+  .presentation-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .presentation-container  {
+    padding: 1rem;
+  }
+
+  .presentation-buttons > button, select {
+    font-size: 0.7rem;
+  }
+
+  section.cards:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  section.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    align-items: center;
+
+    max-width: 100%;
+  }
+
+  .presentation-container .container h2 {
+    margin-bottom: 0;
+  }
+
+  .presentation-container .container {
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+  }
+
+  .our-story-card-animation-container {
+    margin-top: -1rem;
+  }
+
+  .our-story-card-img {
+    width: 300px;
+  }
+
+  .our-story-card-video {
+    width: 200px;
+  }
+
+  .text-0, .text-1 {
+    font-size: 0.6rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .our-story-card-animation-text {
+    padding: 1rem 0rem;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+
+  .show::after {
+    width: 2rem;
+  }
+
+  .show .our-story-card-animation-image {
+    max-height: 60px;
+    width: 40px;
+  }
+
+  .faq > ul > li > button {
+    font-size: 1.2rem;
+  }
+  
+  .faq .svg-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .faq div p {
+    font-size: 0.9rem;
+  }
+
+  .faq > div {
+    margin-bottom: 6rem;
+  }
+
+  .faq-answer span {
+    font-size: 1rem;
+  }
+  
+}

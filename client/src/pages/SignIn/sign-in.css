@@ -1,0 +1,89 @@
+.sign-in-main {
+  justify-self: center;
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+
+  max-width: 500px;
+  width: 100%;
+}
+
+.sign-in-main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  gap: 1rem 0;
+
+  background-color: rgba(0,0,0,.75);
+  border-radius: 0.3rem;
+  padding: 60px 68px 40px;
+
+  width: 100%;
+}
+
+.sign-in-main .container h1 {
+  align-self: flex-start;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.registration-input {
+  appearance: none;
+  background-color: #333;
+  border: 0;
+  border-radius: 0.3rem;
+  color: #fff;
+  padding: 0.3rem 1rem;
+
+  width: 100%;
+  height: 50px;
+}
+
+.registration-input:focus {
+  border-bottom: 2px solid #b9772b;
+  outline: none;
+}
+
+.registration-input::placeholder{
+  color: #ccc;
+}
+
+.sign-in-page {
+  display: block;
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  padding: 1.2rem 0rem !important;
+  font-weight: bold;
+}
+
+.check-box {
+  display: flex;
+
+  width: 100%;
+}
+
+#sign-in-btn {
+  display: flex;
+  justify-content: center;
+  background-color: var(--button-red-color);
+  border-radius: 0.1rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 1rem;
+
+  width: 60%;
+}
+
+.need-help {
+  display: block;
+  align-self: center;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 1rem;
+}
+

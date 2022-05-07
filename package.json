@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  },
+  "scripts": {
+    "server-dependencies": "npm install --prefix server",
+    "client-dependencies": "npm install --prefix client",
+    "install-all-deps": "concurrently \"npm run server-dependencies\" \"npm run client-dependencies\"",
+    "start": "concurrently \"npm run start --prefix client\" \"npm run start --prefix server\""
+    }
+}
