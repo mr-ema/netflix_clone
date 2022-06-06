@@ -4,7 +4,7 @@ const cors = require('cors')
 
 // %%%%%%%%%%%%% CONFIGS %%%%%%%%%%%%
 const PORT = process.env.PORT || 3001
-const URI = 'mongodb+srv://read:X8W4IHSuhCvb529w@cluster0.4hm7m.mongodb.net/api?retryWrites=true&w=majority'
+const URI = 'mongodb+srv://read:23qHWyVwCQxrfO43@cluster0.4hm7m.mongodb.net/api?retryWrites=true&w=majority'
 
 // %%%%%%%%%%% CONECTIONS %%%%%%%%%%%
 const app = express()
