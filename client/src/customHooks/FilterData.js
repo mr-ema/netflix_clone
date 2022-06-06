@@ -26,7 +26,7 @@ const useFilterData = (data, filterBy, filter) => {
   }
     
 
-  useEffect(() => filterData(filterBy, filter), [filter, filterBy])
+   useEffect(() => filterData(filterBy, filter), [])
 
   return [result]
 }
