@@ -1,5 +1,25 @@
-# SetUp
-### On the root folder
-► run: <b>npm install</b> <br>
-► then run: <b> npm run install-all-deps </b> <br>
-► finaly run: <b> npm run start </b>
+## Netflix Clone
+
+### This is my first project and is Made with:
+- React
+- Express
+- Mongoose
+
+## Deployment
+
+- To deploy this project on the root folter run
+
+```bash
+npm run install
+```
+
+
+```bash
+npm run install-all-deps
+```
+
+
+
+```bash
+npm run start 
+```
