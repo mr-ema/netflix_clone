@@ -10,7 +10,7 @@
 - To deploy this project on the root folter run
 
 ```bash
-npm run install
+npm install
 ```
 
 
@@ -23,3 +23,7 @@ npm run install-all-deps
 ```bash
 npm run start 
 ```
+
+## videos
+https://user-images.githubusercontent.com/101372000/172263215-7b223424-e7e2-49b8-aab9-679158dec69f.mp4
+
