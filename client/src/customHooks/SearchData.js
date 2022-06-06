@@ -29,7 +29,7 @@ const useSearchData = (data, filterBy, filter) => {
   }
     
 
-  useEffect(() => filterData(filterBy, filter), [filter, filterBy])
+  useEffect(() => filterData(filterBy, filter), [filterData])
 
   return [result]
 }
